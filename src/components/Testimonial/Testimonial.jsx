@@ -1,11 +1,11 @@
 import React from 'react';
-import Slider from "react-slick";
+import SliderComponent from "react-slick"; 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import sImg1 from '../../images/testimonial/img-1.jpg'
 import sImg2 from '../../images/testimonial/img-2.jpg'
 import sImg3 from '../../images/testimonial/img-2.jpg'
-
+const Slider = SliderComponent.default || SliderComponent;
 
 
 const testimonials = [

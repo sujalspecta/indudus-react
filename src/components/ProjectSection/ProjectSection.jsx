@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Projects from '../../api/projects';
 import SectionTitle from '../SectionTitle/SectionTitle';
-import Slider from "react-slick";
+import SliderComponent from "react-slick"; 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+const Slider = SliderComponent.default || SliderComponent;
 
 const ProjectSection = (props) => {
     const ClickHandler = () => {

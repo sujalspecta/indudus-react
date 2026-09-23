@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from "react-slick";
+import SliderComponent from "react-slick"; 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Pimg1 from '../../images/partners/img-1.png';
@@ -8,6 +8,7 @@ import Pimg3 from '../../images/partners/img-3.png';
 import Pimg4 from '../../images/partners/img-4.png';
 import Pimg5 from '../../images/partners/img-5.png';
 import Pimg6 from '../../images/partners/img-6.png';
+const Slider = SliderComponent.default || SliderComponent;
 
 const PartnersSection = (props) => {
     const settings = {

@@ -1,6 +1,7 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLinkComponent from 'react-anchor-link-smooth-scroll';
 import './style.css'
+const AnchorLink = AnchorLinkComponent.default || AnchorLinkComponent;
 
 const Scrollbar = () => {
 
