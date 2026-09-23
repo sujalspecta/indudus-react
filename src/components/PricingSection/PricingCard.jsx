@@ -25,7 +25,7 @@ const PricingCard = ({ plan, price, features }) => {
                                     <li key={index}>{feature}</li>
                                 ))}
                             </ul>
-                            <Link OnClick={ClickHandler} to="/">CHOOSE PLAN</Link>
+                            <Link onClick={ClickHandler} to="/">CHOOSE PLAN</Link>
                         </div>
                     </div>
                 </div>

@@ -11905,3 +11905,64 @@ wpo-hero-slider-s4
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* 1. Force the main parent container to take up structural layout space */
+.wpo-hero-slider {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100vh !important; /* Force full screen height, or use 700px */
+}
+
+/* 2. Force Swiper's internal wrapper to expand to full height */
+.wpo-hero-slider .swiper {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+}
+
+/* 3. Force the wrapper to correctly align your slides */
+.wpo-hero-slider .swiper-wrapper {
+  display: flex !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* 4. Ensure each active slide occupies the structural bounding box */
+.wpo-hero-slider .swiper-slide {
+  flex-shrink: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+}
+
+/* 5. Match your theme's absolute layout inside the newly forced container boundaries */
+.wpo-hero-slider .slide-inner {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  z-index: 1 !important;
+}
+
+
+/* Forces active track visibility in Swiper 14 engine layouts */
+.wpo-hero-slider .swiper {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.wpo-hero-slider .swiper-wrapper {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: flex !important;
+}
+
+.wpo-hero-slider .swiper-slide {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+

@@ -1,5 +1,6 @@
 import React from 'react';
-import CountUp from 'react-countup';
+import CountUpC from 'react-countup';
+const CountUp = CountUpC.default || CountUpC
 
 const FunFact2 = () => {
     return (
